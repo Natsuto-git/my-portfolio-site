@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Image Generator</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // グラデーション背景
+        const gradient = ctx.createLinearGradient(0, 0, 300, 300);
+        gradient.addColorStop(0, '#667eea');
+        gradient.addColorStop(1, '#764ba2');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 300, 300);
+        
+        // 円形のフレーム
+        ctx.beginPath();
+        ctx.arc(150, 150, 140, 0, 2 * Math.PI);
+        ctx.strokeStyle = 'white';
+        ctx.lineWidth = 8;
+        ctx.stroke();
+        
+        // テキスト
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 48px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('夏翔', 150, 170);
+        
+        // 画像をダウンロード
+        const link = document.createElement('a');
+        link.download = 'profile.jpg';
+        link.href = canvas.toDataURL('image/jpeg');
+        link.click();
+    </script>
+</body>
+</html>
