@@ -6,401 +6,333 @@
     <title>山口夏翔 | Yamaguchi Natsuto</title>
     <meta name="description" content="19歳フリーランス・山口夏翔の自己紹介サイト。若者から新しい社会づくりを目指すリーダーのポートフォリオです。">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-text">山口夏翔</div>
-            <div class="loading-subtitle">Welcome to My Story</div>
-            <button onclick="skipLoading()" style="margin-top: 20px; padding: 10px 20px; background: white; border: none; border-radius: 5px; cursor: pointer;">Skip Loading</button>
-        </div>
-    </div>
-    
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-logo">
-                <span class="logo-text">山口夏翔</span>
-            </div>
-            <ul class="nav-menu">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">山口夏翔</a>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#vision">Vision</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="mobile-menu-toggle" id="mobile-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
     </nav>
-        
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-background">
-                <div class="bg-element bg-element-1"></div>
-                <div class="bg-element bg-element-2"></div>
-                <div class="bg-element bg-element-3"></div>
-            </div>
-            
-            <div class="container">
-                <div class="hero-main">
-                    <div class="hero-text">
-                        <div class="hero-label">19-Year-Old Freelancer & Social Change Maker</div>
-                        <h1 class="hero-title">
-                            <span class="line-1">
-                                <span class="char">山</span>
-                                <span class="char">口</span>
-                                <span class="char">夏</span>
-                                <span class="char">翔</span>
-                            </span>
-                            <span class="line-2">
-                                <span class="char">Y</span>
-                                <span class="char">a</span>
-                                <span class="char">m</span>
-                                <span class="char">a</span>
-                                <span class="char">g</span>
-                                <span class="char">u</span>
-                                <span class="char">c</span>
-                                <span class="char">h</span>
-                                <span class="char">i</span>
-                                <span class="char"> </span>
-                                <span class="char">N</span>
-                                <span class="char">a</span>
-                                <span class="char">t</span>
-                                <span class="char">s</span>
-                                <span class="char">u</span>
-                                <span class="char">t</span>
-                                <span class="char">o</span>
-                            </span>
-                        </h1>
-                        <p class="hero-description">
-                            <span class="desc-line">自分が選んだ道を正解にする。</span>
-                            <span class="desc-line">若者から新しい社会づくりを目指すリーダーです。</span>
-                        </p>
-                        <div class="hero-cta">
-                            <a href="#contact" class="cta-primary">
-                                <span class="cta-text">Let's Connect</span>
-                                <div class="cta-arrow">→</div>
-                            </a>
-                            <a href="#about" class="cta-secondary">My Story</a>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-visual">
-                        <div class="visual-container">
-                            <div class="profile-wrapper">
-                                <div class="profile-image-modern">
-                                    <div class="image-overlay"></div>
-                                </div>
-                            </div>
-                            <div class="floating-elements-modern">
-                                <div class="float-element element-1">
-                                    <div class="element-inner"></div>
-                                </div>
-                                <div class="float-element element-2">
-                                    <div class="element-inner"></div>
-                                </div>
-                                <div class="float-element element-3">
-                                    <div class="element-inner"></div>
-                                </div>
-                            </div>
-                        </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>山口夏翔<br>Yamaguchi Natsuto</h1>
+                    <p class="hero-subtitle">19-Year-Old Freelancer & Social Change Maker</p>
+                    <p class="hero-description">自分が選んだ道を正解にする。若者から新しい社会づくりを目指すリーダーです。人間力と情熱、行動力で学歴を圧倒し、意識の高い若者が輝ける社会を実現します。</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                        <a href="#about" class="btn btn-secondary">My Story</a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="scroll-indicator">
-                <div class="scroll-text">Scroll</div>
-                <div class="scroll-line"></div>
+                <div class="hero-visual">
+                    <!-- Visual content will be handled by CSS -->
+                </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">私について</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">私について</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><strong>こんにちは！山口夏翔（やまぐち なつと）です。</strong></p>
+                    <p>兵庫県在住の19歳、フリーランスとして活動しています。MBTI診断ではENFJ（主人公タイプ）で、人とのつながりを大切にし、みんなが輝ける社会を作ることが私の使命です。</p>
+                    <p>「<strong>最初から正解の道を選ぶのではなく、自分がより面白いと感じた道を選び、その道を正解にする</strong>」という信念のもと、高校では生徒会長として校則改定を成功させ、インターアクトクラブでは地域貢献活動をリードしました。</p>
+                    <p><strong>YouTuberのヒカルさん</strong>から大きな影響を受け、「なりたいものになれるのはなろうとしたものだけ」「心配すんな全部上手くいく」という言葉を座右の銘にしています。</p>
+                    <p>スポーツ全般が大好きで、野球、柔道、テニス、バレーボール、サッカー、バスケットボール、ビリヤード、卓球、バドミントンなど、ありとあらゆるスポーツを楽しんでいます。温泉も大好き！</p>
                 </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p><strong>こんにちは！山口夏翔（やまぐち なつと）です。</strong></p>
-                        <p>兵庫県在住の19歳、フリーランスとして活動しています。MBTI診断ではENFJ（主人公タイプ）で、人とのつながりを大切にし、みんなが輝ける社会を作ることが私の使命です。</p>
-                        <p>「<strong>最初から正解の道を選ぶのではなく、自分がより面白いと感じた道を選び、その道を正解にする</strong>」という信念のもと、高校では生徒会長として校則改定を成功させ、インターアクトクラブでは地域貢献活動をリードしました。</p>
-                        <p><strong>YouTuberのヒカルさん</strong>から大きな影響を受け、「なりたいものになれるのはなろうとしたものだけ」「心配すんな全部上手くいく」という言葉を座右の銘にしています。</p>
-                        <p>スポーツ全般が大好きで、野球、柔道、テニス、バレーボール、サッカー、バスケットボール、ビリヤード、卓球、バドミントンなど、ありとあらゆるスポーツを楽しんでいます。温泉も大好き！</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">19</div>
+                        <div class="stat-label">Years Old</div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">19</div>
-                            <div class="stat-label">Years Old</div>
+                    <div class="stat-card">
+                        <div class="stat-number">80</div>
+                        <div class="stat-label">TOEFL Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">9+</div>
+                        <div class="stat-label">Sports Played</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-description">これまでの歩み</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">高校生徒会長として校則改定を実現</h3>
+                        <p class="timeline-company">高等学校生徒会</p>
+                        <p class="timeline-date">高校3年生</p>
+                        <p><strong>課題：</strong>冬場の防寒具が高価で重たい指定コートのみ許可という不合理な校則</p>
+                        <p><strong>行動：</strong>生徒の意見をまとめ、資料作成・リサーチを実施。教師陣との交渉を重ねる</p>
+                        <p><strong>成果：</strong>全校生徒の90%以上の賛成を得て、3年以上改定されていなかった校則の改定に成功</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">インターアクトクラブ部長「服の力プロジェクト」</h3>
+                        <p class="timeline-company">インターアクトクラブ</p>
+                        <p class="timeline-date">17歳</p>
+                        <p><strong>課題：</strong>家庭の不要な古着が廃棄される一方で、世界には服を必要とする人々が存在</p>
+                        <p><strong>行動：</strong>地域の図書館・教育機関に回収ボックス設置許可を取得。ポスター作成・直接的な呼びかけを実施</p>
+                        <p><strong>成果：</strong>1ヶ月で段ボール10個分の古着を地域住民から回収</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">フリーランスとして活動開始</h3>
+                        <p class="timeline-company">個人事業</p>
+                        <p class="timeline-date">現在</p>
+                        <p>これまでの経験を活かし、若者の意識向上と社会貢献を軸としたフリーランス活動を展開。英語・中国語・ビジネススキルの習得にも注力し、グローバルな視点での活動を目指している。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-description">スキルと強み</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Language Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>日本語（ネイティブ）</span>
+                            <span>100%</span>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">80</div>
-                            <div class="stat-label">TOEFL Score</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="100"></div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">9+</div>
-                            <div class="stat-label">Sports Played</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>英語（TOEFL 80点）</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>中国語（学習中）</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="35"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Leadership & Communication</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>リーダーシップ</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>コミュニケーション</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>交渉・調整力</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Business & Digital</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>ビジネス実務法務</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>AIツール活用</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>企画・運営力</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience" class="section experience">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Experience</h2>
-                    <p class="section-subtitle">これまでの歩み</p>
+    <!-- Vision Section -->
+    <section id="vision" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vision & Values</h2>
+                <p class="section-description">夢・目標・価値観</p>
+            </div>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-icon">🎯</div>
+                    <h3>Mission</h3>
+                    <p>人間力と情熱、行動力で学歴を圧倒する。意識の高い若者が「変な目で見られる」現状を改善し、若者から新しい社会づくりを積極的に行える社会を実現する。</p>
                 </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>高校生徒会長として校則改定を実現</h3>
-                            <p class="timeline-company">高等学校生徒会</p>
-                            <p class="timeline-date">高校3年生</p>
-                            <p><strong>課題：</strong>冬場の防寒具が高価で重たい指定コートのみ許可という不合理な校則</p>
-                            <p><strong>行動：</strong>生徒の意見をまとめ、資料作成・リサーチを実施。教師陣との交渉を重ねる</p>
-                            <p><strong>成果：</strong>全校生徒の90%以上の賛成を得て、3年以上改定されていなかった校則の改定に成功</p>
-                            <div class="skills-earned">
-                                <span class="skill-tag">リーダーシップ</span>
-                                <span class="skill-tag">交渉力</span>
-                                <span class="skill-tag">資料作成</span>
-                                <span class="skill-tag">傾聴力</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>インターアクトクラブ部長「服の力プロジェクト」</h3>
-                            <p class="timeline-company">インターアクトクラブ</p>
-                            <p class="timeline-date">17歳</p>
-                            <p><strong>課題：</strong>家庭の不要な古着が廃棄される一方で、世界には服を必要とする人々が存在</p>
-                            <p><strong>行動：</strong>地域の図書館・教育機関に回収ボックス設置許可を取得。ポスター作成・直接的な呼びかけを実施</p>
-                            <p><strong>成果：</strong>1ヶ月で段ボール10個分の古着を地域住民から回収</p>
-                            <div class="skills-earned">
-                                <span class="skill-tag">地域連携</span>
-                                <span class="skill-tag">企画運営</span>
-                                <span class="skill-tag">広報デザイン</span>
-                                <span class="skill-tag">社会貢献</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>フリーランスとして活動開始</h3>
-                            <p class="timeline-company">個人事業</p>
-                            <p class="timeline-date">現在</p>
-                            <p>これまでの経験を活かし、若者の意識向上と社会貢献を軸としたフリーランス活動を展開。英語・中国語・ビジネススキルの習得にも注力し、グローバルな視点での活動を目指している。</p>
-                            <div class="skills-earned">
-                                <span class="skill-tag">自己管理</span>
-                                <span class="skill-tag">多言語学習</span>
-                                <span class="skill-tag">ビジネススキル</span>
-                                <span class="skill-tag">国際感覚</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="vision-card">
+                    <div class="vision-icon">💡</div>
+                    <h3>Core Belief</h3>
+                    <p>「最初から正解の道を選ぶのではなく、自分がより面白いと感じた道を選び、その道を正解にする」失敗から学び、すべてを成功につなげる力が私の強みです。</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">🌟</div>
+                    <h3>Values</h3>
+                    <p>最強のポジティブ思考力。「なりたいものになれるのはなろうとしたものだけ」「心配すんな全部上手くいく」人の良いところに目を向け、加点方式で関係を築きます。</p>
                 </div>
             </div>
-        </section>
+            <div class="vision-quote">
+                <blockquote>
+                    "熱い情熱を持つ若者たちの心の中にある「種を咲かせていける」ような社会を作りたい"
+                </blockquote>
+                <cite>- 山口夏翔</cite>
+            </div>
+        </div>
+    </section>
 
-        <section id="skills" class="section skills">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Skills</h2>
-                    <p class="section-subtitle">スキルと強み</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-description">つながりましょう</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>一緒に新しい社会を作りませんか？</h3>
+                    <p>スポーツを一緒に楽しめる仲間、起業を志している方、経営者の方、グローバルに活動している方、楽しく遊べる友達まで、幅広くつながりを求めています！</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>お気軽にメールでご連絡ください</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📸</div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p><a href="https://instagram.com/__natsuto_" target="_blank">@__natsuto_</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/山口夏翔" target="_blank">山口夏翔</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>兵庫県</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Language Skills</h3>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <span class="skill-name">日本語（ネイティブ）</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">英語（TOEFL 80点）</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="75"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">中国語（学習中）</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="35"></div>
-                                </div>
-                            </div>
+                <div class="contact-form">
+                    <h3>メッセージを送る</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Leadership & Communication</h3>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <span class="skill-name">リーダーシップ</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="95"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">コミュニケーション</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">交渉・調整力</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="85"></div>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Business & Digital</h3>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <span class="skill-name">ビジネス実務法務</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="60"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">AIツール活用</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">企画・運営力</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="90"></div>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="category">カテゴリー</label>
+                            <select id="category" name="category">
+                                <option value="">選択してください</option>
+                                <option value="business">ビジネス・起業</option>
+                                <option value="sports">スポーツ</option>
+                                <option value="social">社会貢献・ボランティア</option>
+                                <option value="friendship">友達・交流</option>
+                                <option value="other">その他</option>
+                            </select>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" rows="5" placeholder="一緒にやりたいこと、お話したいことなど、お気軽に！" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="vision" class="section vision">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Vision & Values</h2>
-                    <p class="section-subtitle">夢・目標・価値観</p>
-                </div>
-                <div class="vision-content">
-                    <div class="vision-main">
-                        <div class="vision-card">
-                            <div class="vision-icon">🎯</div>
-                            <h3>Mission</h3>
-                            <p>人間力と情熱、行動力で学歴を圧倒する。意識の高い若者が「変な目で見られる」現状を改善し、若者から新しい社会づくりを積極的に行える社会を実現する。</p>
-                        </div>
-                        <div class="vision-card">
-                            <div class="vision-icon">💡</div>
-                            <h3>Core Belief</h3>
-                            <p>「最初から正解の道を選ぶのではなく、自分がより面白いと感じた道を選び、その道を正解にする」失敗から学び、すべてを成功につなげる力が私の強みです。</p>
-                        </div>
-                        <div class="vision-card">
-                            <div class="vision-icon">🌟</div>
-                            <h3>Values</h3>
-                            <p>最強のポジティブ思考力。「なりたいものになれるのはなろうとしたものだけ」「心配すんな全部上手くいく」人の良いところに目を向け、加点方式で関係を築きます。</p>
-                        </div>
-                    </div>
-                    <div class="vision-quote">
-                        <blockquote>
-                            "熱い情熱を持つ若者たちの心の中にある「種を咲かせていける」ような社会を作りたい"
-                        </blockquote>
-                        <cite>- 山口夏翔</cite>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Let's Connect</h2>
-                    <p class="section-subtitle">つながりましょう</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-intro">
-                            <h3>一緒に新しい社会を作りませんか？</h3>
-                            <p>スポーツを一緒に楽しめる仲間、起業を志している方、経営者の方、グローバルに活動している方、楽しく遊べる友達まで、幅広くつながりを求めています！</p>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div class="contact-details">
-                                <h3>Email</h3>
-                                <p>お気軽にメールでご連絡ください</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📸</div>
-                            <div class="contact-details">
-                                <h3>Instagram</h3>
-                                <p><a href="https://instagram.com/__natsuto_" target="_blank">@__natsuto_</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">💼</div>
-                            <div class="contact-details">
-                                <h3>LinkedIn</h3>
-                                <p><a href="https://linkedin.com/in/山口夏翔" target="_blank">山口夏翔</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-details">
-                                <h3>Location</h3>
-                                <p>兵庫県</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <h3>メッセージを送る</h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="name">お名前</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">メールアドレス</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="category">カテゴリー</label>
-                                <select id="category" name="category">
-                                    <option value="">選択してください</option>
-                                    <option value="business">ビジネス・起業</option>
-                                    <option value="sports">スポーツ</option>
-                                    <option value="social">社会貢献・ボランティア</option>
-                                    <option value="friendship">友達・交流</option>
-                                    <option value="other">その他</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">メッセージ</label>
-                                <textarea id="message" name="message" rows="5" placeholder="一緒にやりたいこと、お話したいことなど、お気軽に！" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
